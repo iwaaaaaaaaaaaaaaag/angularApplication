@@ -11,7 +11,10 @@ const ProductSchema = new Schema({
   description: String,
   heading1: String,
   heading2: String,
-  heading3: String
+  heading3: String,
+  headingText1: String,
+  headingText2: String,
+  headingText3: String
 })
 
 module.exports = mongoose.model('product',ProductSchema)
