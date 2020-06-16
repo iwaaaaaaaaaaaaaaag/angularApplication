@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { LoginComponent } from './login/login.component';
@@ -17,7 +18,11 @@ const routes: Routes = [
     LoginComponent,
     RegisterComponent
   ],
-  imports: [RouterModule.forChild(routes),CommonModule],
+  imports: [
+    RouterModule.forChild(routes),
+    CommonModule,
+    FormsModule
+  ],
   providers: [
       AuthService
   ],
